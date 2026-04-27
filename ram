@@ -1,0 +1,5 @@
+kubernates            minikube start
+kubectl apply -f deployment.yaml
+kubectl get pods
+kubectl expose deployment k8s-app --type=NodePort --port=5000
+minikube service k8s-app      kubectl autoscale deployment k8s-app --cpu-percent=50 --min=2 --max=10          ngrok http 8080
