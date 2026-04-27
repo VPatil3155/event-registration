@@ -9,7 +9,8 @@ def register():
         phone=request.form['phone']
         print("CI Test")
         print("new ci test")
-        print("new ci   22222 test")
+        print("new ci test")
+        
         return f"<h1> thank you {name} your registration for {event} is confirmed !</h1><p>registration deatils sent on youe email {email}</p>"
     return render_template('index.html')
 
